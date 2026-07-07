@@ -1,0 +1,15 @@
+
+<h2></h2>
+
+<ul class='type_list'>
+  {% for item in site.pages %}
+    {% if item.category == include.category %}
+      <li>
+        <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        {% if item.description %}
+          <p>{{ item.description }}</p>
+        {% endif %}
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>

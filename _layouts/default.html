@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+
+<div class="container-fluid" style="margin-top:5em;">
+<div class="row">
+    <div class="two columns">
+
+
+<ul id="site_menu">
+
+
+  <li><a href="{{site.baseurl}}/index.html" id="{{index.md}}">Home</a></li>
+  <li><a href="{{site.baseurl}}/introduction.html" id="{{introduction.md}}">Introduction</a></li>
+  <li><a href="{{site.baseurl}}/activities.html" id="{{lessons.md}}">Lab Activities</a>
+    <ul>
+	{% for page in site.pages %}
+	   {% if page.url contains 'lessons/' %}
+	   <li><a href="{{site.baseurl}}/{{ page.url }}" id="{{page.name}}">{{ page.title }}</a></li>
+	   {% endif %}
+	{% endfor %}
+    </ul>
+  </li>
+  <li><a href="{{site.baseurl}}/find.html">Find Resources</a></li>
+  <li><a href="{{site.baseurl}}/tools.html">Tools</a></li>
+</ul>
+
+<script>
+  var id = "{{page.name}}";
+  document.getElementById(id).style['font-weight'] = 'bold';
+</script>
+      
+    </div>
+    <div class="ten columns">
+      {{ content }}  
+    </div>
+</div>
+</div>
+
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>
