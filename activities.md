@@ -6,7 +6,7 @@ layout: default
 ## {{page.title}}
 
 <ul>
-{% for page in site.pages | sort: 'title' %}
+{% for page in site.pages %}
 {% if page.url contains 'lessons/' %}
 <li><a href="{{site.baseurl}}/{{ page.url }}" id="{{page.name}}">{{ page.title }}</a></li>
 {% endif %}
