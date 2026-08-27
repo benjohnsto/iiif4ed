@@ -3,9 +3,11 @@ layout: default
 ---
 
 
-# An Introduction to IIIF for Educators
+# IIIF for Educators
 
-The International Image Interoperability Framework (IIIF) is a set of open standards that makes it easy to share, view, and interact with high-quality digital images—particularly those from cultural heritage collections such as libraries, archives, and museums. IIIF allows educators and students to access images and other media from many institutions in a consistent way, and to use them in rich, interactive tools without downloading or reformatting files.
+<div style="float:right;width:60%;margin:0 0 2em 2em;">
+<iframe src="https://mcgrawcenter.github.io/mirador/?manifest=https://media.nga.gov/public/manifests/nga_highlights.json" style="border:0;" width="100%" height="700"></iframe>
+</div>The International Image Interoperability Framework (IIIF) is a set of open standards that makes it easy to share, view, and interact with high-quality digital images—particularly those from cultural heritage collections such as libraries, archives, and museums. IIIF allows educators and students to access images and other media from many institutions in a consistent way, and to use them in rich, interactive tools without downloading or reformatting files.
 
 ## IIIF for Teaching and Learning 
 
@@ -33,9 +35,6 @@ At its core, IIIF:
 
 This means that a teacher can, for example, pull together manuscripts from the British Library, paintings from the Art Institute of Chicago, and maps from the Library of Congress, and view them side-by-side in one tool—even though they are hosted on different servers.
 
-<div style="float:right;width:40%;max-width:540px;">
-<iframe src="https://mcgrawcenter.github.io/mirador/?manifest=https://media.nga.gov/public/manifests/nga_highlights.json" style="border:0;" width="100%" height="700"></iframe>
-</div>
 
 ## Why Use IIIF in Education
 IIIF offers several benefits for teaching and learning:

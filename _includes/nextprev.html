@@ -1,0 +1,15 @@
+<div style="display:flex;justify-content:space-between;">
+  {% if page.prev %}
+    <a href="{{page.prev}}" class="button">Previous</a>
+  {% endif %}
+  {% unless page.prev %}
+    <span>&nbsp;</span>
+  {% endunless %}
+  
+  {% if page.next %}
+  <a href="{{page.next}}" class="button">Next</a>
+  {% endif %}
+  {% unless page.next %}
+  <span>&nbsp;</span>
+  {% endunless %}
+</div>

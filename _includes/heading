@@ -1,0 +1,106 @@
+{% if include.name == 'activity' %}
+<h3 class="" style="background-color: #0073a3; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">🖥️ Activity</h3>
+{% endif %}
+
+{% if include.name == 'bigidea' %}
+<h3 class="" style="background-color: #0073a3; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">💡 Big idea</h3>
+{% endif %}
+
+{% if include.name == 'browse' %}
+<h3 class="" style="background-color: #0073a3; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">👓 Browse</h3>
+{% endif %}
+
+{% if include.name == 'collaborate' %}
+<h3 class="" style="background-color: #0073a3; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">🤝 Collaborate</h3>
+{% endif %}
+
+{% if include.name == 'concept' %}
+<h3 class="" style="background-color: #0073a3; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">💡 Concept</h3>
+{% endif %}
+
+{% if include.name == 'custom' and include.text %}
+<h3 class="" style="background-color: #0073a3; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">🪛 {{include.text}}</h3>
+{% endif %}
+
+{% if include.name == 'do' %}
+<h3 class="" style="background-color: #0073a3; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">🖥️ Do</h3>
+{% endif %}
+
+{% if include.name == 'edit' %}
+<h3 class="" style="background-color: #0073a3; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">✍️ Edit</h3>
+{% endif %}
+
+{% if include.name == 'example' %}
+<h3 class="" style="background-color: #0073a3; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">👓 Example</h3>
+{% endif %}
+
+{% if include.name == 'examples-sources' %}
+<h3 class="" style="background-color: #0073a3; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">👓 Examples and Sources</h3>
+{% endif %}
+
+{% if include.name == 'examples' %}
+<h3 class="" style="background-color: #0073a3; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">👓 Examples</h3>
+{% endif %}
+
+{% if include.name == 'explore' %}
+<h3 class="" style="background-color: #0073a3; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">🔭 Explore</h3>
+{% endif %}
+
+
+{% if include.name == 'hands-on' %}
+<h3 class="" style="background-color: #0073a3; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">🖥️ Hands-On Activity</h3>
+{% endif %}
+
+{% if include.name == 'location' %}
+<h3 class="" style="background-color: #0073a3; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">📍 Location</h3>
+{% endif %}
+
+{% if include.name == 'materials' %}
+<h3 class="" style="background-color: #0073a3; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">🧱 Materials</h3>
+{% endif %}
+
+{% if include.name == 'practice' %}
+<h3 class="" style="background-color: #0073a3; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">🫵 Practice</h3>
+{% endif %}
+
+{% if include.name == 'project' %}
+<h3 class="" style="background-color: #0073a3; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">🖥️ Project</h3>
+{% endif %}
+
+{% if include.name == 'proof' %}
+<h3 class="" style="background-color: #0073a3; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">🫵 Proof of Concept (Your Turn)</h3>
+{% endif %}
+
+{% if include.name == 'punchline' %}
+<h3 class="" style="background-color: #0073a3; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">👊 Punchline</h3>
+{% endif %}
+
+{% if include.name == 'reading' %}
+<h3 class="" style="background-color: #0073a3; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">📖 Reading</h3>
+{% endif %}
+
+{% if include.name == 'review' %}
+<h3 class="" style="background-color: #0073a3; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">📍 Review</h3>
+{% endif %}
+
+{% if include.name == 'share' %}
+<h3 class="" style="background-color: #0073a3; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">✉️ Share</h3>
+{% endif %}
+
+{% if include.name == 'steps' %}
+<h3 class="" style="background-color: #0073a3; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">🪜 Steps</h3>
+{% endif %}
+
+{% if include.name == 'submission' %}
+<h3 class="" style="background-color: #0073a3; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">📩 Submission</h3>
+{% endif %}
+
+{% if include.name == 'tools' %}
+<h3 class="" style="background-color: #0073a3; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">🛠️ Tools</h3>
+{% endif %}
+
+{% if include.name == 'view' %}
+<h3 class="" style="background-color: #0073a3; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">👓 View</h3>
+{% endif %}
+
+

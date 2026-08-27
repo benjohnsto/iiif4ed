@@ -12,23 +12,7 @@
     <div class="two columns">
 
 
-<ul id="site_menu">
-
-
-  <li><a href="{{site.baseurl}}/index.html" id="{{index.md}}">Home</a></li>
-  <li><a href="{{site.baseurl}}/introduction.html" id="{{introduction.md}}">Introduction</a></li>
-  <li><a href="{{site.baseurl}}/activities.html" id="{{lessons.md}}">Lab Activities</a>
-    <ul>
-	{% for page in site.pages %}
-	   {% if page.url contains 'lessons/' %}
-	   <li><a href="{{site.baseurl}}/{{ page.url }}" id="{{page.name}}">{{ page.title }}</a></li>
-	   {% endif %}
-	{% endfor %}
-    </ul>
-  </li>
-  <li><a href="{{site.baseurl}}/find.html">Find Resources</a></li>
-  <li><a href="{{site.baseurl}}/tools.html">Tools</a></li>
-</ul>
+     {%- include menu.html -%}
 
 <script>
   var id = "{{page.name}}";
@@ -42,12 +26,15 @@
       
 
       <p class='callout'>{{ page.callout }}</p>
+      
+      <p style="text-align:right;padding:1em 20% 0 7%;margin:0;"><button onclick="copyDivContent()" class="button">Copy Lesson HTML</button></p>
     
-      <div class="activity">
+      <div class="activity" id="activity">
      
       {{ content }}  
       
       </div>
+
     </div>
 </div>
 </div>

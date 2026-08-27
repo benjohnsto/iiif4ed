@@ -1,9 +1,17 @@
 ---
-title: Basic Lab Activity Types
+title: Lab Activities
 layout: default
 ---
 
 ## {{page.title}}
+
+<ul>
+{% for page in site.pages | sort: 'title' %}
+{% if page.url contains 'lessons/' %}
+<li><a href="{{site.baseurl}}/{{ page.url }}" id="{{page.name}}">{{ page.title }}</a></li>
+{% endif %}
+{% endfor %}
+</ul>
 
 
 ### IIIF Literacy
@@ -12,7 +20,7 @@ layout: default
 
 Activity: Students become acquainted with the IIIF Image API, using an image manipulation tool to resize, rotate,and crop a IIIF enabled image.
 
-{%- include type_list.html category='basics' -%}
+{%- include activity_list.html category='basics' -%}
 
 ### Close Viewing
 
@@ -20,7 +28,7 @@ Activity: Students become acquainted with the IIIF Image API, using an image man
 
 Activity: Students explore a single work, such as a book, a scroll, or other detailed work looking for details that interest them or that might suggest further research. Presented with a manifest loaded in Mirador, students look for details they would like to discuss in class or that they would like to research further. The students' ideas and contributions are submitted to a discussion board. 
 
-{%- include type_list.html category='close-viewing' -%}
+{%- include activity_list.html category='close-viewing' -%}
 
 #### Tile Puzzle
 
@@ -51,7 +59,7 @@ Task:
 
 #### Georeferencing Maps
 
-{%- include type_list.html category='maps' -%}
+{%- include activity_list.html category='maps' -%}
 
 ### Digital Narratives
 
