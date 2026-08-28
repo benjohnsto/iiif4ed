@@ -1,6 +1,6 @@
 ---
 title: "Assignments 3-5"
-layout: default
+layout: tutorial
 sortorder: 8
 category: introduction 
 prev: mirador.html

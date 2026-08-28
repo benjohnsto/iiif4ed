@@ -1,6 +1,6 @@
 ---
 title: "Assignment #1"
-layout: default
+layout: tutorial
 sortorder: 3
 category: introduction 
 next: "universal-viewer.html"

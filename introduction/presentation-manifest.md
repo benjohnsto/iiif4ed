@@ -1,6 +1,6 @@
 ---
 title: "The Presentation Manifest"
-layout: default
+layout: tutorial
 sortorder: 2
 category: introduction 
 next: "finding-manifests.html"

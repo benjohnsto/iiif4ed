@@ -1,20 +1,10 @@
 ---
 title: An Introduction to IIIF
-layout: default
+layout: tutorial
 next: introduction/image-manifest.html
 ---
 
 ## {{page.title}}
-
-<ul>
-{% assign sorted_pages = site.pages | sort: 'sortorder' %}
-
-{% for page in sorted_pages %}
-{% if page.url contains 'introduction/' %}
-<li><a href="{{site.baseurl}}/{{ page.url }}" id="{{page.name}}">{{ page.title }}</a></li>
-{% endif %}
-{% endfor %}
-</ul>
 
 <p>The <strong>International Image Interoperability Framework</strong> (IIIF) defines a set of open standards for describing and delivering high-quality images over the web. The standards are the result of collaborative efforts across universities, museums, libraries, and other cultural heritage institutions around the world and provide a standard practice for making images (and other media) available. <strong>IIIF</strong> is not software, it is a protocol, a lingua-franca, for sharing images, collections, and metadata.</p>
 <p>IIIF-enabled media is delivered via <em><strong>manifests</strong></em>. A manifests is a list. On ships, a manifest would have an entry for every passenger, crew member, and officer, as well as a detailed inventory of all cargo and livestock brought aboard and unloaded. To similarly account for global transport of digitized library and museum collections online, the IIIF movers and shakers relied upon the age's-old technique: just make a list and sort it out at the other end. A <strong>IIIF manifest</strong> is an aggregated string of media links and descriptive metadata (basic information about the media) that a source institution wants to make available to users at the end of a media item's journey from its home page.</p>

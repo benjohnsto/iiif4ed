@@ -1,6 +1,6 @@
 ---
 title: "Assignment #2"
-layout: default
+layout: tutorial
 sortorder: 3
 category: introduction 
 next: "download-an-image.html"

@@ -1,6 +1,6 @@
 ---
 title: "Download an Image"
-layout: default
+layout: tutorial
 sortorder: 6
 category: introduction 
 next: "mirador.html"

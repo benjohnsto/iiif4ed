@@ -1,6 +1,6 @@
 ---
 title: "The Image Manifest"
-layout: default
+layout: tutorial
 sortorder: 1
 category: introduction 
 next: presentation-manifest.html

@@ -23,8 +23,21 @@ p { line-height: 21pt; }
 #site_menu li a { color:black;text-decoration:none;margin:0.4em 0;display:block;}
 #site_menu li a:hover { color:#555;text-decoration:none; }
 
+.dropcap {
+  font-family: "Source Sans Pro", Arial, Helvetica, sans-serif;
+  background: #303030;
+  color: #FDF9F2;
+  float: left;
+  font-size: 6rem;
+  line-height: 1;
+  margin: 0.1em 0.1em 0.2em 0;
+  padding: 0.1em;
+}
 
-
+.contextual-menu { padding:0;}
+.contextual-menu li { list-style-type:none;font-size:0.9em; }
+.contextual-menu li a { color:#666; }
+.contextual-menu li.current a { font-weight:bold;color:black; }
 
 ul, ol {
   line-height: 13pt;
@@ -36,6 +49,9 @@ ul li, ol li {
   padding:0.3em;
   line-height:13pt;
 }
+
+
+
 ul li a { color:black;font-weight:bold;}
 ul li a:hover { color:#555;text-decoration:none; }
 
@@ -59,6 +75,17 @@ ul li a:hover { color:#555;text-decoration:none; }
 }
 .activity img { max-width:100%; }
 
+.tiles { 
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.tile {
+  border: solid 1px #EFEFEF;
+  padding: 1em;
+  margin:0.5em 0.5em 0.5em 0;
+  text-decoration:none;
+}
+.tile:hover { box-shadow:0 0 5px grey; }
 
 
 /*********** form elements ***********/

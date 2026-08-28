@@ -1,6 +1,6 @@
 ---
 title: "An Introduction to IIIF"
-layout: activity
+layout: tutorial
 sortorder: 0
 category: introduction 
 callout: ""

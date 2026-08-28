@@ -5,6 +5,16 @@ layout: default
 
 ## {{page.title}}
 
+<h3>Templates</h3>
+<ul>
+{% for page in site.pages %}
+{% if page.url contains 'templates/' %}
+<li><a href="{{site.baseurl}}/{{ page.url }}" id="{{page.name}}">{{ page.title }}</a></li>
+{% endif %}
+{% endfor %}
+</ul>
+
+<h3>Sample Lessons</h3>
 <ul>
 {% for page in site.pages %}
 {% if page.url contains 'lessons/' %}

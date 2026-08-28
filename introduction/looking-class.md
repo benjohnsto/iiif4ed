@@ -1,6 +1,6 @@
 ---
 title: "IIIF: Throught the Looking Class"
-layout: default
+layout: tutorial
 sortorder: 9
 category: introduction 
 prev: assignments3-5.html

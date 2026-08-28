@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+
+<div class="container-fluid" style="margin-top:5em;">
+<div class="row">
+    <div class="two columns">
+
+
+     {%- include menu.html -%}
+
+<script>
+  var id = "{{page.name}}";
+  document.getElementById(id).style['font-weight'] = 'bold';
+</script>
+      
+    </div>
+    <div class="six columns">
+      {{ content }}  
+    </div>
+    <div class="three columns">
+    <h3>Contents</h3>
+    {% assign pt = page.title  %}
+<ul class="contextual-menu">
+{% assign sorted_pages = site.pages | sort: 'sortorder' %}
+{% for page in sorted_pages %}
+{% if page.url contains 'introduction/' %}
+  {% if pt == page.title %}
+  <li class="current"><a href="{{site.baseurl}}/{{ page.url }}" id="{{page.name}}">{{ page.title }}</a></li>
+  {% endif %}
+  {% if pt != page.title %}
+  <li><a href="{{site.baseurl}}/{{ page.url }}" id="{{page.name}}">{{ page.title }}</a></li>
+  {% endif %}
+{% endif %}
+{% endfor %}
+</ul>
+    
+    </div>
+</div>
+</div>
+
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>

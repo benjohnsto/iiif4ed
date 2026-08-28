@@ -2,12 +2,9 @@
 layout: default
 ---
 
+<span class="dropcap">T</span>he International Image Interoperability Framework (IIIF) is a set of open standards that makes it easy to share, view, and interact with high-quality digital images—particularly those from cultural heritage collections such as libraries, archives, and museums. IIIF allows educators and students to access images and other media from many institutions in a consistent way, and to use them in rich, interactive tools without downloading or reformatting files.
 
-# IIIF for Educators
-
-<div style="float:right;width:60%;margin:0 0 2em 2em;">
-<iframe src="https://mcgrawcenter.github.io/mirador/?manifest=https://media.nga.gov/public/manifests/nga_highlights.json" style="border:0;" width="100%" height="700"></iframe>
-</div>The International Image Interoperability Framework (IIIF) is a set of open standards that makes it easy to share, view, and interact with high-quality digital images—particularly those from cultural heritage collections such as libraries, archives, and museums. IIIF allows educators and students to access images and other media from many institutions in a consistent way, and to use them in rich, interactive tools without downloading or reformatting files.
+<iframe src="https://mcgrawcenter.github.io/mirador/?manifest=https://libmma.contentdm.oclc.org/iiif/2/p16028coll7:23830/manifest.json&canvasindex=5" style="border:0;" width="100%" height="500"></iframe>
 
 ## IIIF for Teaching and Learning 
 

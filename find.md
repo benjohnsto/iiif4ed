@@ -5,19 +5,20 @@ layout: default
 
 ## {{page.title}}
 
-<iframe src="https://www.google.com/maps/d/embed?mid=1SC128VPRmKrwYWUu5xQSr1W60vdXyno&ehbc=2E312F&noprof=1" width="80%" height="480"></iframe>
+<iframe src="https://www.google.com/maps/d/embed?mid=1SC128VPRmKrwYWUu5xQSr1W60vdXyno&ehbc=2E312F&noprof=1" width="100%" height="480"></iframe>
 
+<!--
 <form id="searchrepositories" style="margin:1em 0">
 <input type='text' id='search' placeholder='Search'/> <input type="submit" class='button' id='dosearch' value="Search"/>
 </form>
+-->
 
 
-
-<ul id="list" style="margin:1em 0">
-    {% for item in site.data.master limit:10 %}
-      <li><a href="{{item.URL}}" target="_blank">{{item.Name}}</a><br />{{item.Pedagogy}}</li>
+<div class="tiles">
+    {% for item in site.data.master %}
+      <a href="{{item.URL}}" class="tile" target="_blank"><h3>{{item.Name}}</h3>{{item.Pedagogy}}</a>
     {% endfor %}
-</ul>
+</div>
 
 <script>
 
@@ -33,6 +34,12 @@ jQuery("#dosearch").on('click', function(e){
   e.preventDefault();
 });
 
+function tileTemplate(o) {
+  return `<div class="card">
+    <a href="${o.URL}" target="_blank">${o.Name}</a><br />${o.Pedagogy}
+  </div>`;
+}
+
 function doSearch() {
   var str = jQuery("#search").val();
   const flags = "gi"; // Optional: g = global, i = case-insensitive
@@ -40,6 +47,7 @@ function doSearch() {
   jQuery("#list").empty();
   list.forEach((item)=>{
     if(item.Name.search(regex)>= 0 || item.Pedagogy.search(regex)>= 0) { 
+    jQuery("#list").append(tileTemplate(item));
       jQuery("#list").append("<li><a href='"+item.URL+"' target='_blank'>"+item.Name+"</a><br />"+item.Pedagogy+"</li>");
      }
   });

@@ -1,6 +1,6 @@
 ---
 title: "Finding Manifests"
-layout: default
+layout: tutorial
 sortorder: 3
 category: introduction 
 next: "assignment1.html"
