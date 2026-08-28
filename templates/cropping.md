@@ -13,5 +13,5 @@ callout: "Curabitur semper tempor massa sed vehicula. Vivamus sit amet elit laci
 {%- include heading name="activity" -%}
 
 
-<iframe src="https://tripleyefish.com/puzzle/index.html?iiif-image=https://iiif.library.ucla.edu/iiif/2/ark%3A%2F21198%2Fzz0009h857/full/1200,/0/default.jpg&size=144&cols=5&redirect=https://digital.library.ucla.edu/catalog/ark:/21198/zz0009gx6g" frameborder="no" width="100%" height="1200" loading="lazy" allowfullscreen="allowfullscreen"></iframe>
+<iframe src="https://mcgrawcenter.github.io/croppingtool/?manifest=https://tripleyefish.com/mixtape/259/manifest" frameborder="no" width="100%" height="1200" loading="lazy" allowfullscreen="allowfullscreen"></iframe>
 
