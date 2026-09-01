@@ -24,6 +24,8 @@ layout: default
 <script>
 
 var list = {{site.data.master | jsonify}}
+var notable = {{site.data.notable | jsonify}}
+
 
 jQuery("#searchrepositories").submit(function(e){
   doSearch();
@@ -36,23 +38,44 @@ jQuery("#dosearch").on('click', function(e){
 });
 
 function tileTemplate(o) {
-  return `<a href="${o.URL}" class="tile" target="_blank"><h3>${o.Name}</h3>${o.Tags}</a>
+  return `<a href="${o.URL}" class="tile" target="_blank"><h3>${o.Name}</h3>${o.Tags} ${o.notable}</a>
   `;
+}
+
+function getNotable(school) {
+   const notableArr =  notable.filter((e) => school === e.From);
+   const notableList = notableArr.map((e) => `${e.Title} `);
+   return `<p><strong>Notable collections</strong>: ${notableList}</p>`;
+}
+
+function drawGallery(q = null) {
+  if(q) {
+     const flags = "gi"; // Optional: g = global, i = case-insensitive
+     const regex = new RegExp(q, flags);
+     jQuery(".tiles").empty();
+     list.forEach((item)=>{
+       if(item.Name.search(regex)>= 0 || item.Tags.search(regex)>= 0) {
+
+        jQuery(".tiles").append(tileTemplate(item));
+       }
+
+     });
+  }
+  else {
+     jQuery(".tiles").empty();
+     list.forEach((item)=>{
+       item.notable = getNotable(item.Name);
+       jQuery(".tiles").append(tileTemplate(item));
+     });
+  }
 }
 
 function doSearch() {
   var str = jQuery("#search").val();
-  const flags = "gi"; // Optional: g = global, i = case-insensitive
-  const regex = new RegExp(str, flags);
-  jQuery(".tiles").empty();
-  
-  list.forEach((item)=>{
-    if(item.Name.search(regex)>= 0 || item.Tags.search(regex)>= 0) {
-      console.log(item);
-     jQuery(".tiles").append(tileTemplate(item));
-    }
-
-  });
+  drawGallery(str);
 }
+
+
+drawGallery();
 
 </script>
