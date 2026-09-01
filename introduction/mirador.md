@@ -9,7 +9,9 @@ prev: "download-an-image.html"
 
 ## {{page.title}}
 
-<p><img src="{{site.baseurl}}/assets/images/Mirador_cycloop.jpg" alt="Mirador Image Viewer" align="right" />You have found an interesting manuscript at the British Library and wish to compare it with a manuscript from Bruges Public Library and a painting from the Getty Museum in Los Angeles. Each of these institutions has their own viewers, with specific rules and functionalities. This can be burdensome for researchers, going back and forth between websites. <strong>The Mirador viewer</strong> allows you to gather these objects (images + descriptions!) in a single uniform viewing environment.</p>
+<img src="{{site.baseurl}}/assets/images/Mirador_cycloop.jpg" alt="Mirador Image Viewer"  style="max-width:100%" />
+
+<p>You have found an interesting manuscript at the British Library and wish to compare it with a manuscript from Bruges Public Library and a painting from the Getty Museum in Los Angeles. Each of these institutions has their own viewers, with specific rules and functionalities. This can be burdensome for researchers, going back and forth between websites. <strong>The Mirador viewer</strong> allows you to gather these objects (images + descriptions!) in a single uniform viewing environment.</p>
 <h3>How to</h3>
 <ol>
     <li>Select and copy the manifest URL of your object.</li>

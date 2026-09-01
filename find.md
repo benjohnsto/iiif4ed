@@ -38,7 +38,7 @@ jQuery("#dosearch").on('click', function(e){
 });
 
 function tileTemplate(o) {
-  return `<a href="${o.URL}" class="tile" target="_blank"><h3>${o.Name}</h3>${o.Tags} ${o.notable}</a>
+  return `<div class="tile" target="_blank"><a href="${o.URL}"><h3>${o.Name}</h3></a>${o.Tags} ${o.notable}</div>
   `;
 }
 

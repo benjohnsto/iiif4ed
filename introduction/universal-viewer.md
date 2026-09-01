@@ -9,7 +9,7 @@ prev: "assignment1.html"
 
 ## {{page.title}}
 
-<img src="{{site.baseurl}}/assets/images/uv.jpg"/>
+<img src="{{site.baseurl}}/assets/images/uv.jpg" style="width:100%"/>
 <p>Universal Viewer is a IIIF-enabled viewer commonly used on Library and Museum websites.  You can likely used it to view digital collections. Universal Viewer, however, can also be used to view any IIIF resource.</p>
 <h3>How to</h3>
 <ol>

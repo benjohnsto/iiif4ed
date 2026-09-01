@@ -30,6 +30,17 @@ layout: default
 {% endfor %}
 </div>
 
+## Fun & Games
+<div class="tiles">
+{% assign filtered_tools = site.data.tools | where: "Category", "Fun and Games" %}
+{% for tool in filtered_tools %}
+  <div href="{{ tool.URL }}" class="tile" target="_blank">
+    <a href="{{ tool.URL }}"><h3>{{ tool.Name }}</h3></a>
+    {{ tool.Description }}
+  </div>
+{% endfor %}
+</div>
+
 ## Visual Analysis
 <div class="tiles">
 {% assign filtered_tools = site.data.tools | where: "Category", "Visual Analysis" %}
