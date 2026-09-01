@@ -54,8 +54,9 @@ function drawGallery(q = null) {
      const regex = new RegExp(q, flags);
      jQuery(".tiles").empty();
      list.forEach((item)=>{
-       if(item.Name.search(regex)>= 0 || item.Tags.search(regex)>= 0) {
-
+        console.log(item);
+       if(item.Name.search(regex)>= 0) {
+      
         jQuery(".tiles").append(tileTemplate(item));
        }
 
@@ -64,7 +65,7 @@ function drawGallery(q = null) {
   else {
      jQuery(".tiles").empty();
      list.forEach((item)=>{
-       item.notable = getNotable(item.Name);
+       //item.notable = getNotable(item.Name);
        jQuery(".tiles").append(tileTemplate(item));
      });
   }

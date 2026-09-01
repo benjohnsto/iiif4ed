@@ -11,10 +11,10 @@ layout: default
 <div class="tiles">
 {% assign filtered_tools = site.data.tools | where: "Category", "Storytelling & Digital Narratives" %}
 {% for tool in filtered_tools %}
-  <a href="{{ tool.URL }}" class="tile" target="_blank">
-    <h3>{{ tool.Name }}</h3>
+  <div href="{{ tool.URL }}" class="tile" target="_blank">
+    <a href="{{ tool.URL }}"><h3>{{ tool.Name }}</h3></a>
     {{ tool.Description }}
-  </a>
+  </div>
 {% endfor %}
 </div>
 
@@ -23,10 +23,10 @@ layout: default
 <div class="tiles">
 {% assign filtered_tools = site.data.tools | where: "Category", "Collaborative Annotation & Transcription" %}
 {% for tool in filtered_tools %}
-  <a href="{{ tool.URL }}" class="tile" target="_blank">
-    <h3>{{ tool.Name }}</h3>
+  <div href="{{ tool.URL }}" class="tile" target="_blank">
+    <a href="{{ tool.URL }}"><h3>{{ tool.Name }}</h3></a>
     {{ tool.Description }}
-  </a>
+  </div>
 {% endfor %}
 </div>
 
@@ -34,10 +34,10 @@ layout: default
 <div class="tiles">
 {% assign filtered_tools = site.data.tools | where: "Category", "Visual Analysis" %}
 {% for tool in filtered_tools %}
-  <a href="{{ tool.URL }}" class="tile" target="_blank">
-    <h3>{{ tool.Name }}</h3>
+  <div href="{{ tool.URL }}" class="tile" target="_blank">
+    <a href="{{ tool.URL }}"><h3>{{ tool.Name }}</h3></a>
     {{ tool.Description }}
-  </a>
+  </div>
 {% endfor %}
 </div>
 

@@ -87,6 +87,10 @@
 <h3 class="" style="background-color: #0073a3; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">✉️ Share</h3>
 {% endif %}
 
+{% if include.name == 'solve' %}
+<h3 class="" style="background-color: #0073a3; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">🔍 Solve</h3>
+{% endif %}
+
 {% if include.name == 'steps' %}
 <h3 class="" style="background-color: #0073a3; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">🪜 Steps</h3>
 {% endif %}
