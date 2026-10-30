@@ -3,7 +3,7 @@ title: "Lab Activity: Curating for a Group Project"
 layout: activity
 sortorder: 0
 category: [methods]
-callout: "... "
+callout: ""
 ---
 
 ## {{page.title}}

@@ -34,6 +34,15 @@ p { line-height: 21pt; }
   padding: 0.1em;
 }
 
+.screenreader-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    margin: -1px;
+    clip-path: inset(50%);
+}
+
 .contextual-menu { padding:0;}
 .contextual-menu li { list-style-type:none;font-size:0.9em; }
 .contextual-menu li a { color:#666; }

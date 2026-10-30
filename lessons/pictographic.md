@@ -3,7 +3,7 @@ title: "Information Literacy in the Pictographic Age"
 layout: activity
 sortorder: 0
 category: [basics]
-callout: "... "
+callout: ""
 ---
 
 ## {{page.title}}

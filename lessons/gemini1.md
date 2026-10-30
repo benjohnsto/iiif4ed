@@ -3,7 +3,7 @@ title: "Gemini Lab Activity 3"
 layout: activity
 sortorder: 0
 category: [methods]
-callout: "... "
+callout: ""
 ---
 
 ## {{page.title}}

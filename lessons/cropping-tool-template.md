@@ -3,7 +3,7 @@ title: "Cropping Tool Template"
 layout: activity
 sortorder: 0
 category: [methods]
-callout: "... "
+callout: ""
 ---
 
 ## {{page.title}}

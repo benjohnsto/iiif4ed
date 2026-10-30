@@ -3,7 +3,7 @@ title: "Collections Manifest Tool Embed Demo"
 layout: activity
 sortorder: 0
 category: [methods]
-callout: "... "
+callout: ""
 ---
 
 ## {{page.title}}

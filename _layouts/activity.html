@@ -20,12 +20,13 @@
     <div class="ten columns">
 
       <h2>{{ page.title }}</h2>
-
+      
+      {% if page.callout != "" OR page.callout == "... " %}
       <p class='callout'>
         <a href="#"  onclick="copyDivContent()" title="copy Lesson HTML"><img src="{{ site.baseurl }}/assets/images/copy.svg" style="float:right;" alt="click to copy lesson html"/></a>
         {{ page.callout }}
       </p>
-      
+      {% endif %}      
       <p style="text-align:right;padding:1em 20% 0 7%;margin:0;"><button onclick="copyDivContent()" class="button">Copy Lesson HTML</button></p>
     
       <div class="activity" id="activity">

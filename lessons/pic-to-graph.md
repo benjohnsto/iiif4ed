@@ -3,7 +3,7 @@ title: "Pic-to-Graph"
 layout: activity
 sortorder: 0
 category: [basics]
-callout: "... "
+callout: ""
 ---
 
 ## {{page.title}}

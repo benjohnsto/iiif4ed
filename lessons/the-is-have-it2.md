@@ -3,7 +3,7 @@ title: "The I's Have It"
 layout: activity
 sortorder: 0
 category: [basics]
-callout: "... "
+callout: ""
 ---
 
 ## {{page.title}}

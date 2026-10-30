@@ -3,7 +3,7 @@ title: "Zooming Mendoza"
 layout: activity
 sortorder: 0
 category: [close-viewing]
-callout: "... "
+callout: ""
 ---
 
 ## {{page.title}}

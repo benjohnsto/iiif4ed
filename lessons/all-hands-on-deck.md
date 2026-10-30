@@ -3,7 +3,7 @@ title: "All Hands on Deck"
 layout: activity
 sortorder: 0
 category: [methods]
-callout: "... "
+callout: ""
 ---
 
 ## {{page.title}}

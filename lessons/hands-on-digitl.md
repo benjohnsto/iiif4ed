@@ -3,7 +3,7 @@ title: "Hands-On Digitl"
 layout: activity
 sortorder: 0
 category: [basics]
-callout: "... "
+callout: ""
 ---
 
 ## {{page.title}}

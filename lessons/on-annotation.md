@@ -3,7 +3,7 @@ title: "Annotation"
 layout: activity
 sortorder: 0
 category: [basics]
-callout: "... "
+callout: ""
 ---
 
 ## {{page.title}}

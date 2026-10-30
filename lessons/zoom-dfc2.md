@@ -3,7 +3,7 @@ title: "Zoom DFC"
 layout: activity
 sortorder: 0
 category: [methods]
-callout: "... "
+callout: ""
 ---
 
 ## {{page.title}}

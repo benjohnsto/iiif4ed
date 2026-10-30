@@ -3,7 +3,7 @@ title: "Triple Eye Eff"
 layout: activity
 sortorder: 0
 category: [basics]
-callout: "... "
+callout: ""
 ---
 
 ## {{page.title}}

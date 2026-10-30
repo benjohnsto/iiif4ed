@@ -3,7 +3,7 @@ title: "3D Close Viewing and Spatial Annotation"
 layout: activity
 sortorder: 0
 category: [basics]
-callout: "... "
+callout: ""
 ---
 
 ## {{page.title}}

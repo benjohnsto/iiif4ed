@@ -3,7 +3,7 @@ title: "Paragone Debates - Drawing and 3D Scanning"
 layout: activity
 sortorder: 0
 category: [basics]
-callout: "... "
+callout: ""
 ---
 
 ## {{page.title}}

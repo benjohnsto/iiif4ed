@@ -3,7 +3,7 @@ title: "Storiiies Lab Activity: The World from the Perspective of the Global Sou
 layout: activity
 sortorder: 0
 category: [methods]
-callout: "... "
+callout: ""
 ---
 
 ## {{page.title}}

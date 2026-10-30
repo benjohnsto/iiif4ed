@@ -3,7 +3,7 @@ title: "Lab Activity: Introduction of UCLA Collection of “Patent Medicine Trad
 layout: activity
 sortorder: 0
 category: [basics]
-callout: "... "
+callout: ""
 ---
 
 ## {{page.title}}

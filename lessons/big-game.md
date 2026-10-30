@@ -3,29 +3,24 @@ title: "Lab Activity: Big Game"
 layout: activity
 sortorder: 0
 category: [methods]
-callout: "... "
+callout: ""
 ---
 
 ## {{page.title}}
 
 
-{%- include heading name="concept" -%}
-
-<div id="kl_wrapper_3" class="kl_circle_left variation_2 kl_wrapper" style="border-style: none; color: #000000;">
-<div id="kl_custom_block_0" class="">
-
-<h3 class="" style="background-color: #e26030; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">💡Puzzle me this!</h3>
+<h3>💡Puzzle me this!</h3>
 <iframe style="color: #000000;" src="https://tripleyefish.com/puzzle/index.html?iiif-image=https://cdm16003.contentdm.oclc.org/iiif/2/p15150coll3:5836/617,583,548,535/800,/0/default.jpg&amp;size=160&amp;cols=5" width="100%" height="860" loading="lazy" allowfullscreen="allowfullscreen"></iframe>
 <p>&nbsp;</p>
 </div>
 <div id="kl_custom_block_1" class="" style="color: #000000;">
 
-<h3 class="" style="background-color: #e26030; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">🖥️ Activity</h3>
+{%- include heading name="activity" -%}
 <p>We will explore this remarkable resource, and learn some of its sophisticated features for scholarly use. This Canvas discussion-based lab activity will support our active engagement with embedded tools and instructions.</p>
 </div>
 <div id="kl_custom_block_5" class="" style="color: #000000;">
 
-<h3 class="" style="background-color: #e26030; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">🪜 Steps</h3>
+{%- include heading name="steps" -%}
 <details style="color: #000000;">
 <summary><span style="color: #000000;"><strong>Part 1:</strong> Solve the tile puzzle above&nbsp;<span style="color: #236fa1;"><em><br /></em></span></span></summary>
 <ol style="list-style-type: decimal;">
@@ -60,7 +55,7 @@ callout: "... "
 </div>
 <div id="kl_custom_block_5" class="" style="color: #000000;">
 
-<h3 class="" style="background-color: #e26030; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">🛠️ Tools</h3>
+{%- include heading name="tools" -%}
 <details>
 <summary><strong>Mixtape</strong></summary>
 <iframe src="https://tripleyefish.com/mixtape/176" width="100%" height="800" loading="lazy"></iframe>
@@ -72,13 +67,13 @@ callout: "... "
 </div>
 <div id="kl_custom_block_7" class="" style="color: #000000;">
 
-<h3 class="" style="background-color: #e26030; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">✉️ Share</h3>
+{%- include heading name="share" -%}
 <p>Select one image or image detail that you want to share with the class as a puzzle. Submit a reply to this discussion forum that includes a brief comment or "teaser" about the puzzle.</p>
 <p><strong>Submit before end of class</strong></p>
 </div>
 <div id="kl_custom_block_8" class="" style="color: #000000;">
 
-<h3 class="" style="background-color: #e26030; color: #ffffff; padding: 0.2em 0.6em; border-radius: 30px;">🤝 Collaborate</h3>
+{%- include heading name="collaborate" -%}
 <ol style="list-style-type: decimal;">
 <li>Review the posts by your peers, and try "solving" a few</li>
 <li>Submit a reply to at least one of your peers' puzzles and posts with a reflection of your own, addressing w<span style="font-family: inherit; font-size: 1rem;">hat you discovered in it, by looking closely</span></li>
