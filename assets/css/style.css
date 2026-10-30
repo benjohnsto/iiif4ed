@@ -89,7 +89,7 @@ ul li a:hover { color:#555;text-decoration:none; }
   grid-template-columns: auto auto auto;
 }
 .tile {
-  border: solid 1px #EFEFEF;
+  border: solid 1px #BCBCBC;
   padding: 1em;
   margin:0.5em 0.5em 0.5em 0;
   text-decoration:none;
