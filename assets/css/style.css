@@ -86,15 +86,19 @@ ul li a:hover { color:#555;text-decoration:none; }
 
 .tiles { 
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: grid-template-columns: 25% 25% 25% 25%;;
 }
 .tile {
+/*
   border: solid 1px #BCBCBC;
   padding: 1em;
   margin:0.5em 0.5em 0.5em 0;
   text-decoration:none;
+*/
 }
-.tile:hover { box-shadow:0 0 5px grey; }
+.tile:hover { 
+/*box-shadow:0 0 5px grey;*/
+ }
 
 
 /*********** form elements ***********/

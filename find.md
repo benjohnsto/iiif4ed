@@ -15,7 +15,7 @@ layout: default
 
 
 <div class="tiles">
-    {% for item in site.data.master %}
+    {% for item in site.data.collections %}
       {% assign tags = item.Tags | split: " " %}
       <a href="{{item.URL}}" class="tile" target="_blank"><h3>{{item.Name}}</h3>{{item.Tags}}</a>
     {% endfor %}
@@ -23,7 +23,7 @@ layout: default
 
 <script>
 
-var list = {{site.data.master | jsonify}}
+var list = {{site.data.collections | jsonify}}
 var notable = {{site.data.notable | jsonify}}
 
 
@@ -38,7 +38,7 @@ jQuery("#dosearch").on('click', function(e){
 });
 
 function tileTemplate(o) {
-  return `<div class="tile" target="_blank"><a href="${o.URL}"><h3>${o.Name}</h3></a>${o.Tags} ${o.notable}</div>
+  return `<div class="tile"><a href="${o.URL}" target="_blank"><h3>${o.Name}</h3></a>${o.Tags}</div>
   `;
 }
 
@@ -54,8 +54,10 @@ function drawGallery(q = null) {
      const regex = new RegExp(q, flags);
      jQuery(".tiles").empty();
      list.forEach((item)=>{
-        console.log(item);
-       if(item.Name.search(regex)>= 0) {
+
+       var t = item.Tags.split(",").map((tag) => { return tag.toLowerCase().trim(); });
+//t.includes(q.toLowerCase())
+       if(item.Name.search(regex)>= 0 || item.Tags.search(regex)>= 0) {
       
         jQuery(".tiles").append(tileTemplate(item));
        }

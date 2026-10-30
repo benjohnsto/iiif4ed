@@ -21,7 +21,7 @@
 
       <h2>{{ page.title }}</h2>
       
-      {% if page.callout != "" OR page.callout == "... " %}
+      {% if page.callout != "" %}
       <p class='callout'>
         <a href="#"  onclick="copyDivContent()" title="copy Lesson HTML"><img src="{{ site.baseurl }}/assets/images/copy.svg" style="float:right;" alt="click to copy lesson html"/></a>
         {{ page.callout }}
